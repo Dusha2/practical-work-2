@@ -1,0 +1,45 @@
+{
+  "name": "practical-work-2",
+  "version": "0.0.0",
+  "description": "Практична робота №2: робота з package.json, залежностями, змінними оточення та TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "typecheck": "tsc --noEmit",
+    "demo": "tsx src/demo.ts",
+    "prepare": "husky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dusha2/practical-work-2.git"
+  },
+  "author": "Roman Dushyn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dusha2/practical-work-2/issues"
+  },
+  "homepage": "https://github.com/Dusha2/practical-work-2#readme",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "zod": "^4.1.11"
+  },
+  "devDependencies": {
+    "@commitlint/config-conventional": "^20.0.0",
+    "@eslint/js": "^9.36.0",
+    "@types/node": "^24.6.1",
+    "commitlint": "^20.1.0",
+    "eslint": "^9.36.0",
+    "eslint-config-prettier": "^10.1.8",
+    "husky": "^9.1.7",
+    "prettier": "^3.6.2",
+    "tsup": "^8.5.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.45.0"
+  }
+}
