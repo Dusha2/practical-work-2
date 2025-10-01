@@ -1,6 +1,6 @@
 {
   "name": "practical-work-2",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Практична робота №2: робота з package.json, залежностями, змінними оточення та TypeScript",
   "type": "module",
   "main": "index.js",
