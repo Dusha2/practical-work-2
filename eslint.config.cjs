@@ -3,9 +3,7 @@ const tseslint = require('typescript-eslint');
 const prettier = require('eslint-config-prettier');
 
 module.exports = [
-  {
-    ignores: ['**/*.cjs'],
-  },
+  { ignores: ['dist/**', '**/*.cjs'] },
   js.configs.recommended,
   ...tseslint.configs.recommended,
   prettier,
@@ -22,7 +20,7 @@ module.exports = [
       '@typescript-eslint': tseslint.plugin,
     },
     rules: {
-      '@typescript-eslint/no-explicit-any': 'warn',
+      '@typescript-eslint/no-explicit-any': 'error',
       'no-unused-vars': 'warn',
     },
   },
